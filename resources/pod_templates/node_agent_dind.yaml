@@ -15,18 +15,18 @@ spec:
           value: tcp://localhost:2375
       resources:
         requests:
-          ephemeral-storage: "1Gi"
+          ephemeral-storage: "2Gi"
           memory: "4Gi"
           cpu: "1"
         limits:
-          ephemeral-storage: "1Gi"
+          ephemeral-storage: "4Gi"
           memory: "4Gi"
           cpu: "4"
     - name: dind-daemon
       image: docker:18.09.6-dind
       resources:
         requests:
-          ephemeral-storage: "1Gi"
+          ephemeral-storage: "2Gi"
           memory: "256Mi"
           cpu: "250m"
         limits:
