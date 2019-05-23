@@ -14,7 +14,7 @@ spec:
           ephemeral-storage: "4Gi"
           memory: "4Gi"
           cpu: "4"
-    - name: build-agent-ops
+    - name: jenkins-agent-ops
       image: 730036231311.dkr.ecr.us-west-2.amazonaws.com/juvo/ops/build-agent-ops:v6
       command:
         - cat
