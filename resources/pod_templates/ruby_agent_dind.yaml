@@ -50,7 +50,6 @@ spec:
       ports:
         - containerPort: 2375
       securityContext:
-        runAsUser: 10000
         privileged: true
       volumeMounts:
         - name: docker-graph-storage
