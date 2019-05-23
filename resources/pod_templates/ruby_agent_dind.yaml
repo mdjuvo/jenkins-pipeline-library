@@ -7,7 +7,7 @@ spec:
   containers:
     - name: jnlp
       image: 'jenkins/jnlp-slave:3.27-1-alpine'
-      args: ['\$(JENKINS_SECRET)', '\$(JENKINS_NAME)']
+      args: ['$(JENKINS_SECRET)', '$(JENKINS_NAME)']
       resources:
         requests:
           ephemeral-storage: "250Mi"
