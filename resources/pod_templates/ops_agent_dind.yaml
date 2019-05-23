@@ -15,7 +15,7 @@ spec:
           memory: "4Gi"
           cpu: "4"
     - name: jenkins-agent-ops
-      image: 730036231311.dkr.ecr.us-west-2.amazonaws.com/juvo/ops/build-agent-ops:v11
+      image: 730036231311.dkr.ecr.us-west-2.amazonaws.com/juvo/ops/jenkins-agent-ops:v11
       command:
         - cat
       tty: true
