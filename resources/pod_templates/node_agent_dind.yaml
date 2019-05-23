@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
     - name: node-build-agent
-      image: 730036231311.dkr.ecr.us-west-2.amazonaws.com/juvo/ops/node-build-agent:0.1.3-SNAPSHOT
+      image: 730036231311.dkr.ecr.us-west-2.amazonaws.com/juvo/ops/node-build-agent:0.1.4-SNAPSHOT
       command:
         - cat
       tty: true
