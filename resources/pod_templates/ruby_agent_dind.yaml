@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
     - name: jnlp
-      image: 'jenkins/jnlp-slave:3.27-1-alpine'
+      image: 'jenkins/jnlp-slave:alpine'
       args: ['$(JENKINS_SECRET)', '$(JENKINS_NAME)']
       resources:
         requests:
@@ -19,8 +19,6 @@ spec:
           cpu: "4"
     - name: ruby-build-agent
       image: 730036231311.dkr.ecr.us-west-2.amazonaws.com/juvo/ops/ruby-build-agent:0.1.5-SNAPSHOT
-      securityContext:
-        runAsUser: 10000
       command:
         - cat
       tty: true
