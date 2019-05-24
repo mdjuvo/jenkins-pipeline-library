@@ -18,7 +18,7 @@ spec:
           memory: "4Gi"
           cpu: "4"
     - name: ruby-build-agent
-      image: 730036231311.dkr.ecr.us-west-2.amazonaws.com/juvo/ops/jenkins-agent-ruby:v???
+      image: 730036231311.dkr.ecr.us-west-2.amazonaws.com/juvo/ops/jenkins-agent-ruby:v10
       command:
         - cat
       tty: true
