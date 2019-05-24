@@ -16,22 +16,22 @@ spec:
       resources:
         requests:
           ephemeral-storage: "2Gi"
-          memory: "4Gi"
+          memory: "2Gi"
           cpu: "1"
         limits:
           ephemeral-storage: "4Gi"
-          memory: "4Gi"
+          memory: "2Gi"
           cpu: "4"
     - name: dind-daemon
       image: docker:18.09.6-dind
       resources:
         requests:
           ephemeral-storage: "2Gi"
-          memory: "256Mi"
+          memory: "2Gi"
           cpu: "250m"
         limits:
           ephemeral-storage: "4Gi"
-          memory: "256Mi"
+          memory: "2Gi"
           cpu: "1"
       securityContext:
         privileged: true
