@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
     - name: jenkins-agent-node
-      image: 730036231311.dkr.ecr.us-west-2.amazonaws.com/juvo/ops/jenkins-agent-node:v2
+      image: registry.juvo.mobi/juvo/ops/jenkins-agent-node:v4
       command:
         - cat
       tty: true
