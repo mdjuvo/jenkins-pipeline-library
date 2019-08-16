@@ -26,3 +26,5 @@ spec:
     - name: docker-socket
       hostPath:
         path: /var/run/docker.sock
+  imagePullSecrets:
+    - name: juvo-registry

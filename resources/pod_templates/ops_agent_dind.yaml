@@ -53,3 +53,5 @@ spec:
   volumes:
     - name: docker-graph-storage
       emptyDir: {}
+  imagePullSecrets:
+    - name: juvo-registry
