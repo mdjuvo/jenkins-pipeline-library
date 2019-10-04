@@ -1,7 +1,9 @@
 #!/usr/bin/env groovy
 
 def call(def branchName, def commitHash) {
-  return "rev-" + cleanBranchName(branchName) + "-${commitHash}"
+  def now = new Date()
+  buildTs = now.format("yy.MM.dd.HH.mm.ss", TimeZone.getTimeZone('UTC'))
+  return "rev-" + cleanBranchName(branchName) + "-${buildTs}-${commitHash}"
 }
 
 
