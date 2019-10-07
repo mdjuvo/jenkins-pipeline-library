@@ -18,7 +18,7 @@ spec:
           memory: "4Gi"
           cpu: "4"
     - name: ruby-build-agent
-      image: registry.juvo.mobi/juvo/ops/jenkins-agent-ruby:v9
+      image: registry.juvo.mobi/juvo/ops/jenkins-agent-ruby:v10
       command:
         - cat
       tty: true
