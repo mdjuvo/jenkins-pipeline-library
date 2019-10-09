@@ -2,8 +2,8 @@
 
 def call(def branchName, def commitHash) {
   def now = new Date()
-  buildTs = now.format("yy.MM.dd.HH.mm.ss", TimeZone.getTimeZone('UTC'))
-  return "rev-" + cleanBranchName(branchName) + "-${buildTs}-${commitHash}"
+  buildTs = now.format("yyyy.MM.dd.HH.mm.ss", TimeZone.getTimeZone('UTC'))
+  return "${buildTs}." + cleanBranchName(branchName) + ".${commitHash}"
 }
 
 
