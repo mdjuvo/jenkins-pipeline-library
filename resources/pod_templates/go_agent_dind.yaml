@@ -3,7 +3,7 @@ kind: Pod
 metadata:
 spec:
   containers:
-    - name: jenkins-agent-node
+    - name: jenkins-agent-go
       image: registry.juvo.mobi/juvo/ops/jenkins-agent-go:0.1.1-SNAPSHOT
       command:
         - cat
