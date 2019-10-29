@@ -30,9 +30,9 @@ spec:
           memory: "2Gi"
           cpu: "250m"
         limits:
-          ephemeral-storage: "4Gi"
+          ephemeral-storage: "8Gi"
           memory: "2Gi"
-          cpu: "1"
+          cpu: "4"
       securityContext:
         privileged: true
       volumeMounts:
